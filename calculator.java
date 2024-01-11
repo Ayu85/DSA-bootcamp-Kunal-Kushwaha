@@ -8,20 +8,11 @@ public class calculator {
         int a=sc.nextInt();
         int b=sc.nextInt();
         switch (ch){
-            case '+':
-                System.out.println(a+b);
-                break;
-            case '-':
-                System.out.println(a-b);
-                break;
-            case '/':
-                System.out.println(a/b);
-                break;
-            case '*':
-                System.out.println(a*b);
-                break;
-            default:
-                System.out.println("Wrong input ");
+            case '+'-> System.out.println(a+b);
+            case '-'-> System.out.println(a-b);
+            case '/'-> System.out.println(a/b);
+            case '*'-> System.out.println(a*b);
+            default-> System.out.println("Wrong input ");
         }
     }
 }
