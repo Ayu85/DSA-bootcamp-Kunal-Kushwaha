@@ -1,6 +1,5 @@
 public class armstrong {
     static boolean isArms(int n){
-
        int org=n;
         int result=0;
         while(n>0){
