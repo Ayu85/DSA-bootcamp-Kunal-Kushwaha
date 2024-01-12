@@ -15,7 +15,7 @@ public class kids_with_greatest_number_candies {
             else
                 ans.add(false);
         }
-return ans;
+        return ans;
     }
     public static void main(String[] args) {
     int[] kids={4,2,1,1,2};
