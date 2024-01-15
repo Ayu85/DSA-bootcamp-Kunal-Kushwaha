@@ -3,16 +3,21 @@ import java.util.Collections;
 import java.util.List;
 
 public class Add_to_array_form_of_integer {
-    static List<Integer> addToArrayForm(int[] nums,int k){
+    static List<Integer> addToArrayForm(int[] num,int k){
         List<Integer> temp=new ArrayList<>();
-        String num="";
-        for(int x:nums)
-            num+=Integer.toString(x);
-        int org=Integer.parseInt(num)+k;
-        System.out.println(org);
+        long result=0;
+        int p=num.length-1 ;
+        for(int x:num)
+        {
+            result+= (long) (x*Math.pow(10,p));
+          //  System.out.print(result+" ");
+            p--;
+        }
+        long org=result+k;
+       // System.out.println(org);
         while(org>0){
-            int rem=org%10;
-            temp.add(rem);
+            long rem=org%10;
+            temp.add((int) rem);
             org/=10;
         }
         Collections.reverse(temp);
