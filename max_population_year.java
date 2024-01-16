@@ -9,7 +9,7 @@ public class max_population_year {
         int year=0;
         for(int i=0;i<arr.length;i++) {
             if (arr[i] > max) {
-                max = i;
+                max = arr[i];
                 year =1950+i;
             }
         }
@@ -17,7 +17,7 @@ public class max_population_year {
     }
     public static void main(String[] args) {
         int[][] arr={{1950,1961},{1960,1971},{1970,1981}};
-       int [][] arr2={{1993,1999},{2000,2010}};
+       int [][] arr2={{1982,1998},{2013,2042},{2010,2035},{2022,2050},{2047,2048}};
         getYear(arr2);
     }
 }
