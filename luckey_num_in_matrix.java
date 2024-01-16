@@ -13,7 +13,7 @@ public class luckey_num_in_matrix {
                 }
             }
             boolean isMax=true;
-            for(int m=0;m<matrix[i].length;m++){
+            for(int m=0;m<matrix.length;m++){
                     if(matrix[i][minInx]<matrix[m][minInx]){
                         isMax=false;
                     }
