@@ -1,7 +1,7 @@
 public class Ceiling_of_num {
     public static void main(String[] args) {
         int[] arr={2,3,5,6,7,10,14,16,18};
-        System.out.println(getCeilBetter(arr,18));
+        System.out.println(getCeilBetter(arr,8));
     }
     static int getCeil(int[] arr,int target){
         int ceil=0;
@@ -18,7 +18,7 @@ public class Ceiling_of_num {
         int right=arr.length-1;
         while(left<=right){
             int mid=(left+right)/2;
-            if(target>arr[mid] && target<arr[mid+1] )
+            if(target>=arr[mid] && target<arr[mid+1] )
                 return arr[mid+1];
             else if(target>arr[mid])
                 left=mid+1;
