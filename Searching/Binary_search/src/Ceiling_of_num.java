@@ -40,5 +40,6 @@ public class Ceiling_of_num {
                 end=mid-1;
         }
         return arr[start];
+//        return arr[end]; to get the floor;
     }
 }
