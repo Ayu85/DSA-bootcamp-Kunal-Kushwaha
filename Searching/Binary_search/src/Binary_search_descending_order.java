@@ -1,7 +1,7 @@
 public class Binary_search_descending_order {
 
     static int search(int[] arr, int target) {
-        if (arr[0] > arr[1]) {
+        if (arr[0] > arr[arr.length-1]) {
             int left=0;
             int right=arr.length-1;
             while(left<=right){
