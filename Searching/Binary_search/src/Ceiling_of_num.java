@@ -1,13 +1,28 @@
 public class Ceiling_of_num {
     public static void main(String[] args) {
         int[] arr={2,3,5,6,7,10,14,16,18};
-        System.out.println(getCeil(arr,18));
+        System.out.println(getCeilBetter(arr,17));
     }
     static int getCeil(int[] arr,int target){
         int ceil=0;
         for(int i=0;i<arr.length-1;i++){
             if(target>arr[i] && target<arr[i+1])
                 ceil=arr[i+1];
+        }
+        return ceil;
+    }
+    static int getCeilBetter(int[] arr,int target){
+        int ceil=0;
+        int left=0;
+        int right=arr.length-1;
+        while(left<=right){
+            int mid=(left+right)/2;
+            if(target>arr[mid] && target<arr[mid+1] )
+                return arr[mid+1];
+            else if(target>arr[mid])
+                left=mid+1;
+            else
+                right=mid-1;
         }
         return ceil;
     }
