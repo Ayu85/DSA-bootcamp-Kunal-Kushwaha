@@ -2,12 +2,16 @@ import java.util.Arrays;
 
 public class first_and_last_position_in_Sorted_array {
     public static void main(String[] args) {
+
         int[] arr = {2, 3, 4, 4, 5, 5};
         System.out.println(Arrays.toString(searchRange(arr, 4)));
     }
 
     static int[] searchRange(int[] nums, int target) {
-        int[] temp = new int[2];
+        int[] temp = {-1 -1};
+        if(nums.length==0)
+            return temp;
+
         int start = searchFirst(nums, target);
         int end = searchLast(nums, target);
         temp[0] = start;
