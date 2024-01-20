@@ -8,7 +8,7 @@ public class first_and_last_position_in_Sorted_array {
     }
 
     static int[] searchRange(int[] nums, int target) {
-        int[] temp = {-1 -1};
+        int[] temp = {-1 ,-1};
         if(nums.length==0)
             return temp;
 
