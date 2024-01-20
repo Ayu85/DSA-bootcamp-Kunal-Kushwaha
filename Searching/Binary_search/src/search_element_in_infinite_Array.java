@@ -1,7 +1,7 @@
 public class search_element_in_infinite_Array {
     public static void main(String[] args) {
-        int[] arr = {2, 4, 5, 6, 8, 9, 10, 12, 14, 15, 18, 19, 22, 23};
-        System.out.println(getIndex(arr, 23));
+        int[] arr = {3,5,7,9,10,90,100,130,140,160,170};
+        System.out.println(getIndex(arr, 170));
 
 //    static int getIndex(int[] arr, int key,int size) {
 //        int start = size - 2;
