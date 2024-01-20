@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class first_and_last_position_in_Sorted_array {
     public static void main(String[] args) {
-        int[] arr = {2, 3, 4, 5, 5, 5};
-
+        int[] arr = {2, 3, 4, 4, 5, 5};
+        System.out.println(Arrays.toString(searchRange(arr, 4)));
     }
 
     static int[] searchRange(int[] nums, int target) {
@@ -22,30 +22,29 @@ public class first_and_last_position_in_Sorted_array {
         while (left <= right) {
             int mid = (left + right) / 2;
             if (arr[mid] == target) {
-                ans=mid;
-                right=mid-1;
-            }
-            else if(target>arr[mid])
-                left=mid+1;
+                ans = mid;
+                right = mid - 1;
+            } else if (target > arr[mid])
+                left = mid + 1;
             else
-                right=mid-1;
+                right = mid - 1;
         }
         return ans;
     }
-    static int searchLast(int[] arr,int target){
-        int left=0;
-        int right=arr.length-1;
-        int ans=0;
-        while(left<=right){
-            int mid=(left+right)/2;
-            if(arr[mid]==target){
-                ans=mid;
-                left=mid+1;
-            }
-            else if(target>arr[mid])
-                left=mid+1;
+
+    static int searchLast(int[] arr, int target) {
+        int left = 0;
+        int right = arr.length - 1;
+        int ans = 0;
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (arr[mid] == target) {
+                ans = mid;
+                left = mid + 1;
+            } else if (target > arr[mid])
+                left = mid + 1;
             else
-                right=mid-1;
+                right = mid - 1;
         }
         return ans;
     }
