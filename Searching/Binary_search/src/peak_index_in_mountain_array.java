@@ -4,6 +4,8 @@ public class peak_index_in_mountain_array {
         System.out.println(getIndexBinarySeacrh(arr));
     }
 
+
+//    using linear search
     static int peakIndexInMountainArray(int[] arr) {
         int peak = 0;
         for (int i = 0; i < arr.length - 1; i++) {
@@ -12,7 +14,7 @@ public class peak_index_in_mountain_array {
         }
         return peak;
     }
-
+//using binary search
     static int getIndexBinarySeacrh(int[] arr) {
         int peak = 0;
         int left = 0;
