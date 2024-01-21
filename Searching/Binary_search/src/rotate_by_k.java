@@ -5,7 +5,7 @@ public class rotate_by_k {
         int[] arr={1,2,3,4,5,6};
         System.out.println("before rotation: ");
         System.out.println(Arrays.toString(arr));
-        rotateByK(arr,4);
+        rotateByK(arr,3);
         System.out.println("after rotation: ");
         System.out.println(Arrays.toString(arr));
     }
