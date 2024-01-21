@@ -2,10 +2,10 @@ import java.util.Arrays;
 
 public class rotate_by_k {
     public static void main(String[] args) {
-        int[] arr={1,2,3,4,5,6,7,8,9};
+        int[] arr={1,2,3,4,5,6};
         System.out.println("before rotation: ");
         System.out.println(Arrays.toString(arr));
-        rotateByK(arr,3);
+        rotateByK(arr,4);
         System.out.println("after rotation: ");
         System.out.println(Arrays.toString(arr));
     }
